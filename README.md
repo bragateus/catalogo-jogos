@@ -1,70 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📚 Catálogo de Jogos
 
-## Available Scripts
+Um site simples e interativo para exibir um catálogo de jogos digitais e de tabuleiro favoritos! Este projeto foi criado com React.js e serve para mim como uma introdução prática no desenvolvimento front, incluindo uso de componentes, props, estado e estilização com CSS.
 
-In the project directory, you can run:
+## 🚀 Funcionalidades
 
-### `npm start`
+- **Listagem de jogos**: Cada jogo exibe um título, uma breve descrição e uma imagem.
+- **Favoritar**: Marque seus jogos favoritos e veja o botão mudar de cor para indicar o status.
+- **Design Responsivo**: Layout flexível e ajustado para diferentes tamanhos de tela.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **JavaScript (ES6+)**: Usado para lógica de interação e manipulação do DOM.
+- **HTML5 e CSS3**: Estrutura básica e estilização do site, com foco em responsividade.
+- **Hooks do React**: `useState` para gerenciar o estado do botão de favorito.
 
-### `npm test`
+## 📂 Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```plaintext
+.
+├── public/                   # Arquivos públicos
+├── src/                      # Código-fonte principal
+│   ├── components/           # Componentes React
+│   │   ├── GameCard.js       # Componente de card de jogo
+│   │   └── GameCatalog.js    # Componente do catálogo de jogos
+│   ├── styles/               # Arquivos de estilo CSS
+│   │   └── GameCatalog.css   # Estilos do catálogo e dos cards
+│   └── App.js                # Componente principal da aplicação
+├── README.md                 # Documentação do projeto
+└── package.json              # Dependências e scripts
+```
 
-### `npm run build`
+## 📦 Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em sua máquina.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Como Executar o Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/seu-usuario/catalogo-de-jogos.git
+   cd catalogo-de-jogos
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Instale as dependências:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Inicie o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm start
+   ```
 
-## Learn More
+4. Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizar o projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎮 Como Usar
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Acesse a lista de jogos e explore as descrições.
+2. Clique em "Adicionar aos Favoritos" para marcar um jogo como favorito.
+3. Observe a cor do botão mudar para verde, indicando que o jogo foi favoritado.
 
-### Code Splitting
+## 💡 Atualizações e Funcionalidades
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Este projeto foi criado como uma introdução ao desenvolvimento front-end com React.js, até o momento utilizei:
 
-### Analyzing the Bundle Size
+- **Componentes**: Estruturação modular usando componentes `GameCard` e `GameCatalog`.
+- **Props e Estado**: Passagem de dados entre componentes e controle de estado interno.
+- **Estilos Dinâmicos**: Mudança de cor do botão com base no estado `isFavorited`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### 🌟 Contribuições
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Sugestões e contribuições são bem-vindas! Sinta-se à vontade para abrir uma [issue](https://github.com/seu-usuario/catalogo-de-jogos/issues) ou enviar um [pull request](https://github.com/seu-usuario/catalogo-de-jogos/pulls).
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Divirta-se explorando o catálogo de jogos!**
