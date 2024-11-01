@@ -1,0 +1,66 @@
+/* src/styles/GameCatalog.css */
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .game-card {
+    width: 15em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a2e30;
+  }
+  
+  .game-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .game-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .game-title {
+    font-size: 1.2em;
+    margin: 10px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .game-description {
+    font-size: 0.9em;
+    color: #b4b2b2;
+    margin: 10px;
+    text-align:center;
+  }
+    
+  .favorite-button {
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+  }
+  .favorite-button.favorited:hover {
+    background-color: #be1818;
+  }
+  .favorite-button.favorited {
+    background-color: #ff6b6b; /* Verde para quando estiver favoritado */
+  }
+  
+  .favorite-button:not(.favorited) {
+    background-color: #4caf50; /* Vermelho para quando não está favoritado */
+  }
+  
